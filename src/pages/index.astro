@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Emiliano Bonilla landing page">
+	<main>
+		<h1>Welcome to <span class="text-gradient">Emiliano Bonilla</span> landing page</h1>
+		<p class="instructions">
+			I'm Emiliano Bonilla, a senior full stack web developer and rising cloud architect, focused on efficiency and the personal and professional growth of those around me. I reside in Minas, Uruguay, and I am passionate about how technology makes us more human by freeing us from repetitive tasks and becoming our ally.
+		</p>
+		<p class="instructions">
+			My work approach centers on people, whether clients or colleagues, fostering collaboration and always seeking quality in every project I lead. I keep up to date with the latest technological trends, analyzing them from a practical and realistic perspective to stay one step ahead in the digital world.
+		</p>
+		<p class="instructions">
+			I hold a degree in Computer Engineering from the Universidad Católica del Uruguay and earned a scholarship through a national contest, ranking second. I am proud of my growth in the tech industry, from my beginnings as a non digital person to becoming a reference within the companies I have worked for. Throughout my career, I have achieved technology integrations that others deemed to hard, demonstrating my ability to tackle complex challenges.
+		</p>
+		<p class="instructions">
+			"Creating innovative and collaborative digital solutions, one project at a time."
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
